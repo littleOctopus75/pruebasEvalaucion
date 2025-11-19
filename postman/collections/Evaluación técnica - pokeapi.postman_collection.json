@@ -1,0 +1,34 @@
+{
+  "info": {
+    "_postman_id": "950f3384-2709-4441-847c-e13c7aa2644c",
+    "name": "Evaluación técnica - pokeapi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener ditto",
+      "id": "af2d51b8-82f4-472f-a37b-6707e1e5141c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/pokemon/ditto",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "pokemon",
+            "ditto"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "workspace": {
+    "id": "7cbbca9b-40e5-4c29-8280-eaa0e749aae5"
+  },
+  "entities": {
+    "collections": [
+      "..\\postman\\collections\\Evaluación técnica - pokeapi.postman_collection.json",
+      "..\\postman\\collections\\Evaluación técnica - catálogo.postman_collection.json",
+      "..\\postman\\collections\\Evaluación técnica - Cifrado.postman_collection.json",
+      "..\\postman\\collections\\Evaluación tecnica - login.postman_collection.json"
+    ],
+    "environments": [
+      "..\\postman\\environments\\env.postman_environment.json"
+    ],
+    "specs": [],
+    "flows": [],
+    "globals": []
+  }
+}

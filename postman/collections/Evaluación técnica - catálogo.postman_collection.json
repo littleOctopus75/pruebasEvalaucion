@@ -1,0 +1,151 @@
+{
+  "info": {
+    "_postman_id": "4bfc97ca-ca8e-4d57-9a82-37687abca8c1",
+    "name": "Evaluación técnica - catálogo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener todos los items",
+      "id": "9f124c37-c67a-4a42-a755-1ec0e892099c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por marca",
+      "id": "247a464a-be79-44c7-8e90-50fd8d231a26",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/items/marca/Sony",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "items",
+            "marca",
+            "Sony"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por nombre",
+      "id": "873b0847-a2ed-4adc-ac98-f5d69c2cbca8",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/items/nombre/Laptop",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "items",
+            "nombre",
+            "Laptop"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por cualquier criterio (nombre, marca)",
+      "id": "367cbd4f-d9d0-4e13-adce-033d0d7654ce",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/items/buscar?criterio=HP",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "items",
+            "buscar"
+          ],
+          "query": [
+            {
+              "key": "criterio",
+              "value": "HP"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por precios",
+      "id": "3c78bbf7-8c12-448b-abba-c3e660534899",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/items/precio?min=10.0&max=1500.0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "items",
+            "precio"
+          ],
+          "query": [
+            {
+              "key": "min",
+              "value": "10.0"
+            },
+            {
+              "key": "max",
+              "value": "1500.0"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

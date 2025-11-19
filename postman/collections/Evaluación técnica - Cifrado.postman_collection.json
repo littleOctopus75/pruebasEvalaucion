@@ -1,0 +1,75 @@
+{
+  "info": {
+    "_postman_id": "8759eacd-9222-437e-a4de-ac59bff4fe81",
+    "name": "Evaluación técnica - Cifrado",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Cifrar texto",
+      "id": "97dfff86-717f-43cb-8b09-ef93be66754c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"texto\": \"Hola Mundo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/aes/cifrar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "aes",
+            "cifrar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Descifrar",
+      "id": "2c88eb9d-6c06-4191-a941-bce761d1777f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"texto\": \"6YAFKMmvo0ZCXaJjYWsLlQ==\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/aes/descifrar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "aes",
+            "descifrar"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
